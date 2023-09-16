@@ -1,0 +1,8 @@
+{
+    "name": "Conference App Front End",
+    "dockerFile":"../dockerfile",
+    "settings":{
+        "terminal.integrated.shell.linux":"/bin/bash"
+    },
+    "forwardPorts": [3000]
+}

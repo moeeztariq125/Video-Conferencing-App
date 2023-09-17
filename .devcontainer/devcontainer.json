@@ -4,5 +4,5 @@
     "settings":{
         "terminal.integrated.shell.linux":"/bin/bash"
     },
-    "forwardPorts": [3000]
+    "forwardPorts": [3000, 5173]
 }

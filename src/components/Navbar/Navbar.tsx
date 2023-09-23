@@ -1,10 +1,48 @@
+import  { useState } from 'react';
+import './navbar.css'; // Import the CSS file
+import { FaHome, FaSearch, FaHeart, FaUser, FaBars } from 'react-icons/fa';
 
 const Navbar = () => {
-  return (
-    <div className="fixed bottom-10 left-1/2 transform -translate-x-1/2 w-1/2 md:w-2/3 lg:w-full bg-black p-4 shadow-md" >
-        
-    </div>
-  )
-}
+  const [selectedItem, setSelectedItem] = useState('home');
 
-export default Navbar
+  const handleItemClick = (item:any) => {
+    setSelectedItem(item);
+  };
+
+  return (
+    <nav className="navbar-container">
+      <button
+        className={`nav-item ${selectedItem === 'home' ? 'selected' : ''}`}
+        onClick={() => handleItemClick('home')}
+      >
+        <FaHome />
+      </button>
+      <button
+        className={`nav-item ${selectedItem === 'search' ? 'selected' : ''}`}
+        onClick={() => handleItemClick('search')}
+      >
+        <FaSearch />
+      </button>
+      <button
+        className={`nav-item ${selectedItem === 'heart' ? 'selected' : ''}`}
+        onClick={() => handleItemClick('heart')}
+      >
+        <FaHeart />
+      </button>
+      <button
+        className={`nav-item ${selectedItem === 'user' ? 'selected' : ''}`}
+        onClick={() => handleItemClick('user')}
+      >
+        <FaUser />
+      </button>
+      <button
+        className={`nav-item ${selectedItem === 'menu' ? 'selected' : ''}`}
+        onClick={() => handleItemClick('menu')}
+      >
+        <FaBars />
+      </button>
+    </nav>
+  );
+};
+
+export default Navbar;

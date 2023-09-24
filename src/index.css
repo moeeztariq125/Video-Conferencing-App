@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(0deg, #000 30%, #001c3d 100%);
+    animation: twinkling 10s infinite;
+}
+
+.stars {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: white;
+    animation: shine 1s infinite;
+}
+
+.stars::before {
+    content: ' ';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: transparent;
+    border-radius: 50%;
+    animation: blink 3s infinite;
+}
+
+.stars:nth-child(1) {
+    top: 50px;
+    left: 20%;
+}
+
+.stars:nth-child(2) {
+    top: 100px;
+    left: 60%;
+}
+
+.stars:nth-child(3) {
+    top: 200px;
+    left: 40%;
+}
+
+/* Add more star positions as needed */
+
+@keyframes twinkling {
+    0% {
+        background: linear-gradient(0deg, #000 30%, #001c3d 100%);
+    }
+    50% {
+        background: linear-gradient(0deg, #000 30%, #001c3d 100%);
+    }
+    100% {
+        background: linear-gradient(0deg, #001c3d 30%, #000 100%);
+    }
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}body {
+            margin: 0;
+            overflow: hidden;
+            background: linear-gradient(0deg, #000 30%, #001c3d 100%);
+            animation: twinkling 10s infinite;
+        }
+
+        .stars {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            background: white;
+            animation: shine 1s infinite;
+        }
+
+        .stars::before {
+            content: ' ';
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: transparent;
+            border-radius: 50%;
+            animation: blink 3s infinite;
+        }
+
+        .stars:nth-child(1) {
+            top: 50px;
+            left: 20%;
+        }
+
+        .stars:nth-child(2) {
+            top: 100px;
+            left: 60%;
+        }
+
+        .stars:nth-child(3) {
+            top: 200px;
+            left: 40%;
+        }
+
+        /* Add more star positions as needed */
+
+        @keyframes twinkling {
+            0% {
+                background: linear-gradient(0deg, #000 30%, #001c3d 100%);
+            }
+            50% {
+                background: linear-gradient(0deg, #000 30%, #001c3d 100%);
+            }
+            100% {
+                background: linear-gradient(0deg, #001c3d 30%, #000 100%);
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.5;
+            }
+        }
+
+        @keyframes blink {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }

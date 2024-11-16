@@ -1,0 +1,17 @@
+{
+  "name": "Video-Conferencing-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.16.0",
+    "pnpm": ">=9.0.0"
+  }
+}

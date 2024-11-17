@@ -1,16 +1,32 @@
 {
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "biomejs.biome",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.addMissingImports": "explicit"
-  },
-  "files.insertFinalNewline": true,
-  "[handlebars]": {
-    "editor.formatOnSave": false,
-    "editor.formatOnPaste": false
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome"
-  }
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.addMissingImports": "explicit"
+	},
+	"files.insertFinalNewline": true,
+	"[handlebars]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnPaste": false
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+	"[json]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.defaultFormatter": "biomejs.biome",
+		"editor.formatOnSave": true
+	},
+
+	"[jsonc]": {
+		"editor.quickSuggestions": {
+			"strings": true
+		},
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "biomejs.biome"
+	}
 }
